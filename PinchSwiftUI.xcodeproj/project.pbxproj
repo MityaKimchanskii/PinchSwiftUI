@@ -11,6 +11,10 @@
 		3B6F31E128F5E91F0075AD24 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6F31E028F5E91F0075AD24 /* ContentView.swift */; };
 		3B6F31E328F5E9220075AD24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B6F31E228F5E9220075AD24 /* Assets.xcassets */; };
 		3B6F31E628F5E9220075AD24 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B6F31E528F5E9220075AD24 /* Preview Assets.xcassets */; };
+		3BB784CA28F6869A00C34E4F /* InfoPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB784C928F6869A00C34E4F /* InfoPanelView.swift */; };
+		3BB784CC28F68D3500C34E4F /* ControlImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB784CB28F68D3500C34E4F /* ControlImageView.swift */; };
+		3BB784CE28F6959A00C34E4F /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB784CD28F6959A00C34E4F /* PageModel.swift */; };
+		3BB784D028F695F600C34E4F /* PageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB784CF28F695F600C34E4F /* PageData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		3B6F31E028F5E91F0075AD24 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3B6F31E228F5E9220075AD24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B6F31E528F5E9220075AD24 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3BB784C928F6869A00C34E4F /* InfoPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPanelView.swift; sourceTree = "<group>"; };
+		3BB784CB28F68D3500C34E4F /* ControlImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlImageView.swift; sourceTree = "<group>"; };
+		3BB784CD28F6959A00C34E4F /* PageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
+		3BB784CF28F695F600C34E4F /* PageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,11 @@
 		3B6F31DD28F5E91F0075AD24 /* PinchSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				3BB784C828F67E1400C34E4F /* Data */,
+				3BB784C728F67E0B00C34E4F /* Model */,
+				3BB784C628F67DFC00C34E4F /* View */,
 				3B6F31DE28F5E91F0075AD24 /* PinchSwiftUIApp.swift */,
-				3B6F31E028F5E91F0075AD24 /* ContentView.swift */,
+				3BB784C528F67DE600C34E4F /* Screens */,
 				3B6F31E228F5E9220075AD24 /* Assets.xcassets */,
 				3B6F31E428F5E9220075AD24 /* Preview Content */,
 			);
@@ -65,6 +76,39 @@
 				3B6F31E528F5E9220075AD24 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3BB784C528F67DE600C34E4F /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				3B6F31E028F5E91F0075AD24 /* ContentView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		3BB784C628F67DFC00C34E4F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3BB784C928F6869A00C34E4F /* InfoPanelView.swift */,
+				3BB784CB28F68D3500C34E4F /* ControlImageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3BB784C728F67E0B00C34E4F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3BB784CD28F6959A00C34E4F /* PageModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3BB784C828F67E1400C34E4F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3BB784CF28F695F600C34E4F /* PageData.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +181,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BB784CC28F68D3500C34E4F /* ControlImageView.swift in Sources */,
+				3BB784CE28F6959A00C34E4F /* PageModel.swift in Sources */,
 				3B6F31E128F5E91F0075AD24 /* ContentView.swift in Sources */,
 				3B6F31DF28F5E91F0075AD24 /* PinchSwiftUIApp.swift in Sources */,
+				3BB784D028F695F600C34E4F /* PageData.swift in Sources */,
+				3BB784CA28F6869A00C34E4F /* InfoPanelView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,8 +321,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,8 +351,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
